@@ -49,8 +49,12 @@ var words = [
     if (!found) {
       guesses--;
       document.getElementById("guesses").textContent = "Tentativas restantes: " + guesses;
+      // Atualiza a imagem da forca
+        var hangmanImage = document.getElementById("hangman-image");
+        hangmanImage.src = "images/forca" + (6 - guesses) + ".png";
   
       if (guesses === 0) {
+        hangmanImage.src = "images/forca7.jpg";
         alert("Você perdeu! A palavra era: " + word);
         resetGame();
         return;
