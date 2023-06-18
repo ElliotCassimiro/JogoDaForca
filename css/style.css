@@ -1,5 +1,12 @@
 body {
     text-align: center;
+    font-family: Arial, sans-serif;
+
+    background-image: url("/images/forca7.png");
+    background-size:auto;
+    background-position:top;
+    background-repeat: no-repeat;
+
   }
   
   h1 {
@@ -24,3 +31,12 @@ body {
     padding: 5px 10px;
   }
   
+  @media (max-width: 600px) {
+    #guess-input {
+      width: 100%;
+    }
+    
+    #guess-button {
+      margin-top: 10px;
+    }
+  }
