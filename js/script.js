@@ -11,6 +11,21 @@ var words = [
     "hipopotamo"
   ];
   
+  // Adiciona imagens do jogo
+  var hangmanImages = [
+    "images/forca7.png",
+    "images/forca1.png",
+    "images/forca2.png",
+    "images/forca3.png",
+    "images/forca4.png",
+    "images/forca5.png",
+    "images/forca6.png",
+  ];
+
+  var hangmanImage = document.getElementById("hangman-image");
+  hangmanImage.src = hangmanImages[0];
+  
+
   // Seleciona uma palavra aleatória do array
   var word = words[Math.floor(Math.random() * words.length)];
   
@@ -49,7 +64,7 @@ var words = [
     if (!found) {
       guesses--;
       document.getElementById("guesses").textContent = "Tentativas restantes: " + guesses;
-      
+
       // Atualiza a imagem da forca
         var hangmanImage = document.getElementById("hangman-image");
         hangmanImage.src = "images/forca" + (6 - guesses) + ".png";
