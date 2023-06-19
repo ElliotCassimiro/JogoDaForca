@@ -13,13 +13,14 @@ var words = [
   
   // Adiciona imagens do jogo
   var hangmanImages = [
-    "images/forca7.png",
+    "images/forca0.png",
     "images/forca1.png",
     "images/forca2.png",
     "images/forca3.png",
     "images/forca4.png",
     "images/forca5.png",
     "images/forca6.png",
+    "images/forca7.png",
   ];
 
   var hangmanImage = document.getElementById("hangman-image");
@@ -70,8 +71,8 @@ var words = [
         hangmanImage.src = "images/forca" + (6 - guesses) + ".png";
   
       if (guesses === 0) {
-        hangmanImage.src = "images/forca7.jpg";
-        alert("Você perdeu! A palavra era: " + word);
+        hangmanImage.src = "images/forca7.png";
+        alert("Vocé perdeu! A palavra era " + word);  
         resetGame();
         return;
       }
