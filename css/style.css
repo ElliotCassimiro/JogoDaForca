@@ -7,11 +7,20 @@ body {
     color: #333;
   }
   
-  #word {
-    font-size: 24px;
-    margin: 20px;
-    color: rgb(52, 76, 96);
+  #bloco {
+    position: relative;
+    display: inline-block;
     
+  }
+
+  #word {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-style:normal;
+    font-family: sans-serif;
   }
   
   #guesses {
@@ -37,7 +46,4 @@ body {
     }
   }
 
-#img {
-  position:static;
-  margin-top: 0%;
-}
+
