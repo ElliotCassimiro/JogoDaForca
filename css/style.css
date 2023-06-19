@@ -1,6 +1,8 @@
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
   }
   
   h1 {
@@ -10,7 +12,7 @@ body {
   #bloco {
     position: relative;
     display: inline-block;
-    
+    margin: 40px;
   }
 
   #word {
@@ -26,10 +28,18 @@ body {
   #guesses {
     font-size: 18px;
     margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   #guess-input {
     margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   #guess-btn {
@@ -41,7 +51,7 @@ body {
       width: 100%;
     }
     
-    #guess-button {
+    #guess-btn {
       margin-top: 10px;
     }
   }
