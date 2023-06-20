@@ -4,9 +4,10 @@ body {
     font-family:'Courier New', Courier, monospace;
     position:relative;
     display:block;
-    background-color: rgb(34, 33, 41) ;
+    background-color: rgb(28, 26, 26) ;
   }
   
+
   #head {
     transform: translate(-50, -50);
     
@@ -14,14 +15,12 @@ body {
 
   h1 {
     color: #188fba;
-    text-shadow: 2px 2px 4px rgba(129, 132, 138, 0.5);
   }
 
   h2 {
     color: aliceblue;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 4px rgba(180, 175, 175, 0.5);
+    font-style: italic;
+    font-style: oblique;
   }
   
   #bloco {
@@ -33,12 +32,12 @@ body {
 
   #word {
     position: absolute;
-    top: 64%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: aliceblue;
     font-style:normal;
-    font-size:small;
+    font-size:x-small;
     font-family: sans-serif;
     width: 100%;
   }
@@ -54,67 +53,55 @@ body {
   #guess-input {
     margin-right: 10px;
     margin-left: 10px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: var(--light);
-    max-width: 200px;
-    padding: .5rem;
-    border-radius: var(--br);
-    outline: none;
-    border-radius: var(--br);
-    font-size: 15px;
-    font-weight: 600;
-    color: antiquewhite;
-  
   }
   
   #guess-btn {
-    height: 50px;
-    margin: 5px;
-    width: 120px;
-    background: #333;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-family: Consolas, Courier New, monospace;
-    border: solid #404C5D 1px;
-    font-size: 16px;
-    color: rgb(161, 161, 161);
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    border-radius: 5px;
-    background: linear-gradient(145deg, #2e2d2d, #212121);
-    -webkit-box-shadow: -1px -5px 15px #41465B, 
-                 5px  5px 15px #41465B, 
-      inset      5px  5px 10px #212121, 
-      inset     -5px -5px 10px #212121;
-    box-shadow: -1px -5px 15px #41465B, 
-                 5px  5px 15px #41465B, 
-      inset      5px  5px 10px #212121, 
-      inset     -5px -5px 10px #212121;
-  }
-  
-  button:hover {
-    -webkit-box-shadow: 1px 1px 13px #20232e,
-                      -1px -1px 13px #545b78;
-    box-shadow: 1px 1px 13px #20232e,
-               -1px -1px 13px #545b78;
-    color: #d6d6d6;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-  }
-  
-  button:active {
-    -webkit-box-shadow: 1px 1px 13px #20232e,
-                       -1px -1px 33px #545b78;
-    box-shadow: 1px 1px 13px #20232e,
-               -1px -1px 33px #545b78;
-    color: #d6d6d6;
-    -webkit-transition: 100ms;
-    transition: 100ms;   
+   height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404C5D 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465B, 
+               5px  5px 15px #41465B, 
+    inset      5px  5px 10px #212121, 
+    inset     -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465B, 
+               5px  5px 15px #41465B, 
+    inset      5px  5px 10px #212121, 
+    inset     -5px -5px 10px #212121;
+}
+
+button:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e,
+                    -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e,
+             -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+button:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e,
+                     -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e,
+             -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;   
   }
 
   .container {
@@ -133,14 +120,4 @@ body {
   img {
     max-width: 100%;
     height: auto; /* Mantém a proporção original da imagem */
-  }
-
-  @keyframes changeBackground {
-    0% { background-color: #333131; }
-    50% { background-color: #110f0f; }
-    100% { background-color: #565353; }
-  }
-  
-  body {
-    animation: changeBackground 4s infinite; /* Aplica a animação ao background */
   }
