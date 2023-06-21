@@ -29,8 +29,4 @@ O Jogo da Forca é um jogo em que o jogador deve adivinhar uma palavra oculta, i
 
 ## Screenshots
 
-![Jogo da Forca](screenshot.png)
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais informações.
+![Jogo da Forca](images/screenshot.png)
