@@ -54,6 +54,10 @@ body {
     margin-right: 10px;
     margin-left: 10px;
   }
+
+  #guess-input:hover {
+    background-color: lightgray;
+  }
   
   #guess-btn {
    height: 50px;

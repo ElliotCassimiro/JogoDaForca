@@ -16,7 +16,6 @@ var words = [
     "Leopardo",
     "Tartaruga",
     "Avestruz",
-    "Baleia",
     "Peixe",
     "Morcego",
     "Burro",
@@ -32,8 +31,7 @@ var words = [
     "images/forca3.png",
     "images/forca4.png",
     "images/forca5.png",
-    "images/forca6.png",
-    "images/forca7.png",
+    "images/forcaF.png",
   ];
 
   var hangmanImage = document.getElementById("hangman-image");
@@ -52,6 +50,8 @@ var words = [
   // Inicializa o número de tentativas e exibe na tela
   var guesses = 6;
   document.getElementById("guesses").textContent = "Tentativas restantes: " + guesses;
+  hangmanImage.src = hangmanImages[0];
+
   
   // Captura o botão de palpite e adiciona um listener para o evento de clique
   var guessBtn = document.getElementById("guess-btn");
@@ -83,12 +83,15 @@ var words = [
         var hangmanImage = document.getElementById("hangman-image");
         hangmanImage.src = "images/forca" + (6 - guesses) + ".png";
   
-      if (guesses === 0) {
-        hangmanImage.src = "images/forca7.png";
-        alert("Vocé perdeu! A palavra era " + word);  
-        resetGame();
-        return;
-      }
+        if (guesses === 0) {
+          hangmanImage.src = hangmanImages[6]; // Exibe a penúltima imagem da forca
+          setTimeout(function() {
+            hangmanImage.src = hangmanImages[7]; // Exibe a última imagem da forca após um intervalo de tempo
+            alert("Você perdeu! A palavra era " + word);
+            resetGame();
+          }, 500);
+          return;
+        }
     }
   
     // Verifica se todas as letras foram adivinhadas
@@ -111,5 +114,19 @@ var words = [
   
     document.getElementById("word").textContent = underscores.join(" ");
     document.getElementById("guesses").textContent = "Tentativas restantes: " + guesses;
+    hangmanImage.src = hangmanImages[0]; // Redefinir a imagem da forca para a inicial
+    document.getElementById("guess-input").value = "";
   }
+
+  window.addEventListener("DOMContentLoaded", function() {
+    // Seleciona automaticamente a caixa de texto quando a página é carregada
+    document.getElementById("guess-input").focus();
+  });
+  
+  var guessBtn = document.getElementById("guess-btn");
+  guessBtn.addEventListener("click", function() {
+    // Retorna automaticamente para a caixa de texto após clicar em "enviar"
+    document.getElementById("guess-input").focus();
+  });
+
   
