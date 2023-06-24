@@ -8,12 +8,12 @@ O Jogo da Forca é um jogo em que o jogador deve adivinhar uma palavra oculta, i
 
 ## Funcionalidades
 
-- Seleção aleatória de palavras para adivinhar.
-- Exibição de underscores representando as letras da palavra a serem adivinhadas.
-- Contagem regressiva das tentativas restantes.
-- Verificação dos palpites do jogador.
-- Exibição da imagem da forca, desenhando o boneco progressivamente a cada erro.
-- Reinicialização do jogo após vitória ou derrota.
+- Seleção aleatória de palavras para adivinhar;
+- Exibição de underscores representando as letras da palavra a serem adivinhadas;
+- Contagem regressiva das tentativas restantes;
+- Verificação dos palpites do jogador;
+- Exibição da imagem da forca, desenhando o boneco progressivamente a cada erro;
+- Reinicialização do jogo após vitória ou derrota;
 
 ## Tecnologias utilizadas
 
