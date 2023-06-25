@@ -1,6 +1,6 @@
 # Jogo da Forca
 
-Um jogo da forca simples desenvolvido com HTML, CSS e JavaScript.
+Um jogo da forca simples desenvolvido com HTML, CSS e JavaScript
 
 ## Descrição
 
